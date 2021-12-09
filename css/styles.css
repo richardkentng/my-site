@@ -1,0 +1,107 @@
+:root {
+  --main-color: rgb(135, 179, 78);
+}
+
+* {
+  margin: 0;
+}
+
+.css {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: green;
+  border: solid black 2px;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  background-color: lightblue;
+}
+
+.poster {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/background.png");
+  background-position: top;
+}
+
+.from-top-gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background: linear-gradient(rgb(255, 156, 118), transparent);
+}
+
+.spacer {
+  height: 250px;
+}
+
+.img-richard {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10rem;
+  border: solid black 3px;
+  z-index: 1;
+}
+
+.img-richard:hover {
+  width: 220px;
+  transform: translate(-50%, -10px);
+  display: inline-block;
+}
+
+h1 {
+  font-size: 5.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.below-h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.programmer {
+  font-family: monospace;
+}
+.animator {
+  font-family: "Fuzzy Bubbles", curisve;
+}
+.explorer {
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+p {
+  color: #333;
+  margin: auto;
+  line-height: 1.5rem;
+}
+
+footer {
+  background-color: var(--main-color);
+  padding: 2rem 0;
+}
+
+.copyright-statement {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: black;
+}
+
+.font-ad {
+  font-family: "Architects Daughter", cursive;
+}
