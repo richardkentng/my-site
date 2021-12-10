@@ -1,9 +1,9 @@
-:root {
-  --main-color: rgb(135, 179, 78);
-}
-
 * {
   margin: 0;
+}
+
+table {
+  border-radius: 0.5rem;
 }
 
 .css {
@@ -14,19 +14,22 @@
   top: 0;
   background-color: green;
   border: solid black 2px;
+  z-index: -1;
 }
 
 body {
   text-align: center;
-  margin: 0;
+  width: 100%;
   background-color: lightblue;
+  font-family: "Roboto", sans-serif;
 }
 
 .poster {
   width: 100%;
-  height: 100vh;
+  height: 550px;
   background-image: url("https://user-images.githubusercontent.com/77288642/145336865-abc467ee-b3b5-4c42-a4f5-ea96be159b41.png");
-  background-position: top;
+  background-position: center;
+  text-align: center;
 }
 
 .from-top-gradient {
@@ -34,43 +37,51 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  background-color: red;
+  height: 550px;
   background: linear-gradient(rgb(255, 156, 118), transparent);
-}
-
-.spacer {
-  height: 250px;
 }
 
 .img-richard {
   width: 200px;
+  position: relative;
   border-radius: 50%;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 10rem;
-  border: solid black 3px;
   z-index: 1;
+  border: solid black 3px;
+  margin: 3rem 0 2rem 0;
 }
 
 .img-richard:hover {
-  width: 220px;
-  transform: translate(-50%, -10px);
-  display: inline-block;
+  width: 205px;
+  transform: translateY(-2.5px);
+}
+
+.img-richard:hover ~ .spacer {
+  height: 5px;
+}
+
+.spacer {
+  height: 10px;
 }
 
 h1 {
   font-size: 5.5rem;
   position: relative;
   z-index: 1;
+  font-family: "Architects Daughter", cursive;
 }
 
-.below-h1 {
+.message-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  border: solid black 5px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.occupations {
   font-size: 2rem;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   position: relative;
   z-index: 1;
 }
@@ -85,30 +96,160 @@ h1 {
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 
-p {
-  color: #333;
-  margin: auto;
-  line-height: 1.5rem;
+table,
+tr,
+td {
+  border: solid black 1px;
 }
 
-.education-container {
-  text-align: left;
-  width: 80%;
+td {
+  padding: 10px;
+}
+
+table.csula,
+table.ga,
+table.panera {
   margin: 0 auto;
-  border: solid;
+  width: 100%;
+  background-color: rgb(216, 210, 197);
+}
+
+tr.panera {
+  color: white;
+  background-color: rgb(108, 148, 53);
+}
+tr.ga {
+  color: white;
+  background-color: rgb(237, 62, 50);
+}
+tr.csula {
+  color: black;
+  background-color: gold;
+}
+
+table.ga-skills img.foundational {
+  width: 100%;
+  max-width: 50px;
+}
+table.ga-skills img.mern {
+  width: 100% !important;
+  max-width: 200px !important;
+}
+
+table.adobe-skills img {
+  width: 50px;
+}
+
+.img-ga-cont {
+  background-color: black;
+  width: 50%;
+}
+.img-csula-cont,
+.img-cont-panera {
+  background-color: white;
+  width: 50%;
+}
+
+img.ga,
+img.csula,
+img.panera {
+  width: 50%;
+  max-width: 300px;
 }
 
 footer {
-  background-color: var(--main-color);
+  background: linear-gradient(
+    0.25turn,
+    rgb(179, 165, 192),
+    rgb(113, 191, 215),
+    rgb(66, 156, 66)
+  );
   padding: 2rem 0;
 }
 
+table.links {
+  margin: 0 auto;
+}
+
+table.links img {
+  max-width: 50px;
+}
+
+td.linkedin {
+  background-color: rgb(102, 196, 230);
+}
+
+td.email {
+  background-color: rgb(157, 96, 211);
+}
+
+.btn-email-me > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Architects Daughter", cursive;
+}
+
+.btn-email-me {
+  box-shadow: inset 0px 39px 0px -24px #ffe368;
+  background-color: #ffb700;
+  border-radius: 4px;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+  margin-top: 1rem;
+  transform: translateY(-9px);
+}
+.btn-email-me:hover {
+  background-color: #c79243;
+}
+.btn-email-me:active {
+  position: relative;
+  top: 1px;
+}
+
+img.linkedin {
+  width: 50px;
+  border: solid black 1px;
+  border-radius: 8px;
+}
+img.flaticon {
+  width: 75px;
+  border-radius: 1rem;
+  opacity: 0.9;
+}
+
+.thanks-flaticon {
+  background-color: rgb(126, 215, 195);
+}
+
 .copyright-statement {
+  margin-top: 1rem;
   font-size: 0.8rem;
   font-family: sans-serif;
   color: black;
 }
 
-.font-ad {
-  font-family: "Architects Daughter", cursive;
+.text-align-left {
+  text-align: left;
+}
+
+.font-time-period {
+  color: black;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .occupations {
+    font-size: 1.5rem;
+  }
 }
