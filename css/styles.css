@@ -173,7 +173,7 @@ table.links img {
 }
 
 td.linkedin {
-  background-color: rgb(102, 196, 230);
+  background-color: rgb(248, 203, 105);
 }
 
 td.email {
@@ -214,6 +214,7 @@ img.linkedin {
   width: 50px;
   border: solid black 1px;
   border-radius: 8px;
+  background-color: white;
 }
 img.flaticon {
   width: 75px;
