@@ -20,7 +20,8 @@ table {
 body {
   text-align: center;
   width: 100%;
-  background-color: lightblue;
+  background-color: rgb(237, 230, 209);
+  /* background-image: url("../images/contruction.jpg"); */
   font-family: "Roboto", sans-serif;
 }
 
@@ -106,18 +107,46 @@ td {
   padding: 10px;
 }
 
+.panera-cont {
+  display: flex;
+}
+.panera-cont > .col {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.panera-cont .col-2 {
+  background-color: rgb(236, 232, 210);
+}
+.panera-cont .head-1 {
+  color: white;
+  background-color: rgb(87, 129, 67);
+  padding: 1rem;
+}
+.panera-cont .head-2 {
+  color: white;
+  background-color: rgb(87, 129, 67);
+  filter: brightness(0.9);
+  padding: 1rem;
+}
+.panera-cont img {
+  padding: 1rem;
+}
+.panera-cont .duties {
+  padding: 1rem;
+}
+
+.ga-icon {
+  width: 100px;
+}
+
 table.csula,
-table.ga,
-table.panera {
+table.ga {
   margin: 0 auto;
   width: 100%;
   background-color: rgb(216, 210, 197);
 }
 
-tr.panera {
-  color: white;
-  background-color: rgb(108, 148, 53);
-}
 tr.ga {
   color: white;
   background-color: rgb(237, 62, 50);
@@ -142,14 +171,8 @@ table.adobe-skills img {
   width: 50%;
 }
 .img-csula-cont,
-.img-cont-panera {
-  background-color: white;
-  width: 50%;
-}
-
 img.ga,
-img.csula,
-img.panera {
+img.csula {
   width: 50%;
   max-width: 300px;
 }
