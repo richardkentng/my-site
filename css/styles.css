@@ -20,7 +20,7 @@ table {
 body {
   text-align: center;
   width: 100%;
-  background-color: rgb(237, 230, 209);
+  background-color: rebeccapurple;
   /* background-image: url("../images/contruction.jpg"); */
   font-family: "Roboto", sans-serif;
 }
@@ -109,14 +109,22 @@ td {
 
 .panera-cont {
   display: flex;
+  /* width: 100vw; */
+  /* border: solid red 4px; */
 }
 .panera-cont > .col {
   display: flex;
   flex-direction: column;
   background-color: white;
 }
+.panera-cont > .col-1 {
+  /* border: solid gold 5px; */
+  flex: 1;
+}
 .panera-cont .col-2 {
+  /* border: solid lime 5px; */
   background-color: rgb(236, 232, 210);
+  flex: 2;
 }
 .panera-cont .head-1 {
   color: white;
@@ -129,8 +137,15 @@ td {
   filter: brightness(0.9);
   padding: 1rem;
 }
-.panera-cont img {
-  padding: 1rem;
+.panera-cont .panera-img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* border: solid lime 5px; */
+}
+.panera-cont .panera-img-cont > img {
+  width: 100px;
 }
 .panera-cont .duties {
   padding: 1rem;
