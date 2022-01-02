@@ -227,13 +227,7 @@ td {
 .ga-icon-cont .row {
   display: flex;
   font-display: row;
-}
-
-.ga-icon-cont .row-1 {
-  justify-content: space-around;
   flex-wrap: wrap;
-}
-.ga-icon-cont .row-2 {
   justify-content: space-around;
 }
 
