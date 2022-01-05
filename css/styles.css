@@ -20,7 +20,7 @@ table {
 body {
   text-align: center;
   width: 100%;
-  background-color: rebeccapurple;
+  background-color: rgb(0, 0, 0);
   /* background-image: url("../images/contruction.jpg"); */
   font-family: "Roboto", sans-serif;
 }
@@ -237,41 +237,62 @@ td {
   padding: 0.9rem;
 }
 
-table.csula,
-table.ga {
-  margin: 0 auto;
-  width: 100%;
-  background-color: rgb(216, 210, 197);
+/* CSULA CONTAINER */
+
+.csula-cont {
+  display: flex;
+  flex-direction: row;
 }
 
-tr.ga {
-  color: white;
-  background-color: rgb(237, 62, 50);
+.csula-cont > .col {
+  display: flex;
+  flex-direction: column;
 }
-tr.csula {
-  color: black;
+.csula-cont > .col-1 {
+  flex: 1;
+}
+.csula-cont > .col-2 {
+  flex: 2;
+}
+
+.csula-cont .head {
   background-color: gold;
+  padding: 1rem;
 }
-
-.table-core-skills,
-.table-mern {
-  width: 100%;
-  max-width: 400px;
+.csula-cont .head-2 {
+  filter: brightness(0.9);
 }
-
-table.adobe-skills img {
-  width: 50px;
+.csula-cont .below-head {
+  flex: 1;
 }
-
-.img-ga-cont {
-  background-color: black;
-  width: 50%;
+.csula-cont .csula-img-cont {
+  padding: 1rem;
+  background-color: white;
 }
-.img-csula-cont,
-img.ga,
-img.csula {
+.csula-cont .csula-img-cont img {
   width: 50%;
   max-width: 300px;
+}
+.csula-cont .descrip {
+  padding: 2rem;
+  line-height: 2rem;
+  text-align: left;
+  background-color: var(--descripBgColor);
+}
+
+.final-project-link {
+  border: solid black 1px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 219, 199);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* OTHER: ..... */
+
+table.links {
+  margin: 0 auto;
 }
 
 footer {
@@ -282,14 +303,6 @@ footer {
     rgb(66, 156, 66)
   );
   padding: 2rem 0;
-}
-
-table.links {
-  margin: 0 auto;
-}
-
-table.links img {
-  max-width: 50px;
 }
 
 td.linkedin {
@@ -372,5 +385,11 @@ img.flaticon {
 
   .occupations {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .csula-cont .descrip {
+    line-height: 1.2rem;
   }
 }
