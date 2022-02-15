@@ -145,32 +145,26 @@ h1 {
   display: flex;
   flex-direction: row;
   background-color: white;
-}
-.ga-cont .head {
-  color: white;
-  background-color: rgb(230, 30, 30);
-  padding: 1rem;
-}
+  .head {
+    color: white;
+    background-color: rgb(230, 30, 30);
+    padding: 1rem;
+  }
+  .col-1 {
+    background-color: #222;
 
-.ga-cont > .col-1 {
-  background-color: #222;
-
-  flex: 1;
-}
-.ga-cont > .col-2 {
-  flex: 2;
-}
-
-.ga-img {
-  width: 50%;
-  max-width: 225px;
-}
-
-.ga-img-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
+    flex: 1;
+  }
+  .col-2 {
+    flex: 2;
+  }
+  .descrip {
+    background-color: var(--descripBgColor);
+    text-align: left;
+  }
+  .head-2 {
+    filter: brightness(0.9);
+  }
 }
 
 .ga-cont .ga-img-cont,
@@ -178,13 +172,15 @@ h1 {
   padding: 1rem;
 }
 
-.ga-cont .descrip {
-  background-color: var(--descripBgColor);
-  text-align: left;
-}
-
-.ga-cont .head-2 {
-  filter: brightness(0.9);
+.ga-img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  .ga-img {
+    width: 50%;
+    max-width: 225px;
+  }
 }
 
 .ga-icon-cont {
@@ -194,19 +190,17 @@ h1 {
   margin: 1rem;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   max-width: 600px;
-}
-
-.ga-icon-cont .row {
-  display: flex;
-  font-display: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.ga-icon {
-  width: 20%;
-  max-width: 100px;
-  padding: 0.9rem;
+  .row {
+    display: flex;
+    font-display: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .ga-icon {
+    width: 20%;
+    max-width: 100px;
+    padding: 0.9rem;
+  }
 }
 
 /* CSULA CONTAINER */
