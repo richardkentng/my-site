@@ -208,42 +208,40 @@ h1 {
 .csula-cont {
   display: flex;
   flex-direction: row;
-}
-
-.csula-cont > .col {
-  display: flex;
-  flex-direction: column;
-}
-.csula-cont > .col-1 {
-  flex: 1;
-}
-.csula-cont > .col-2 {
-  flex: 2;
-}
-
-.csula-cont .head {
-  background-color: gold;
-  padding: 1rem;
-}
-.csula-cont .head-2 {
-  filter: brightness(0.9);
-}
-.csula-cont .below-head {
-  flex: 1;
-}
-.csula-cont .csula-img-cont {
-  padding: 1rem;
-  background-color: white;
-}
-.csula-cont .csula-img-cont img {
-  width: 50%;
-  max-width: 300px;
-}
-.csula-cont .descrip {
-  padding: 2rem;
-  line-height: 2rem;
-  text-align: left;
-  background-color: var(--descripBgColor);
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-1 {
+    flex: 1;
+  }
+  .col-2 {
+    flex: 2;
+  }
+  .head {
+    background-color: gold;
+    padding: 1rem;
+  }
+  .head-2 {
+    filter: brightness(0.9);
+  }
+  .below-head {
+    flex: 1;
+  }
+  .csula-img-cont {
+    padding: 1rem;
+    background-color: white;
+  }
+  .csula-img-cont img {
+    width: 50%;
+    max-width: 300px;
+  }
+  .descrip {
+    padding: 2rem;
+    line-height: 2rem;
+    text-align: left;
+    background-color: var(--descripBgColor);
+  }
 }
 
 .final-project-link {
