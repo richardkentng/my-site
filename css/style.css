@@ -295,6 +295,17 @@ td.email {
   top: 1px;
 }
 
+.github-icon-cont {
+  background-color: #3a73c9;
+}
+.github-icon-cont .github-icon {
+  width: 50px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+
 img.linkedin {
   width: 50px;
   border: solid black 1px;
