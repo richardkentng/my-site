@@ -68,15 +68,6 @@ h1 {
   position: relative;
   z-index: 1;
 }
-.message-box .occupation .programmer {
-  font-family: monospace;
-}
-.message-box .occupation .animator {
-  font-family: "Fuzzy Bubbles", curisve;
-}
-.message-box .occupation .explorer {
-  font-family: "Baloo Bhaijaan 2", cursive;
-}
 
 /* PANERA CONTAINER */
 :root {
