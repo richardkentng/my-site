@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 * {
   margin: 0;
 }
@@ -63,10 +64,18 @@ h1 {
   margin: 0 auto;
 }
 .message-box .occupation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Share Tech Mono", monospace;
   font-size: 2rem;
-  font-weight: 500;
-  position: relative;
-  z-index: 1;
+}
+.message-box .occupation div {
+  display: flex;
+}
+.message-box .occupation div span:hover {
+  color: white;
+  background-color: black;
 }
 
 /* PANERA CONTAINER */
@@ -339,14 +348,20 @@ img.flaticon {
   h1 {
     font-size: 3rem;
   }
-
-  .occupation {
-    font-size: 1.5rem;
-  }
 }
 @media (max-width: 500px) {
   .csula-cont .descrip {
     line-height: 1.2rem;
+  }
+
+  .occupation {
+    flex-direction: column !important;
+  }
+  .occupation div {
+    align-self: center;
+  }
+  .occupation div .space {
+    display: none;
   }
 }
 
