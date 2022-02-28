@@ -78,6 +78,24 @@ h1 {
   }
 }
 
+/* PROJECTS */
+.projects-section {
+  .projects {
+    .project {
+      * {
+        width: 200px;
+      }
+      .project-link {
+        border: solid 1px #666;
+        text-decoration: none;
+        &:hover {
+          border: solid 1px gold;
+        }
+      }
+    }
+  }
+}
+
 /* PANERA CONTAINER */
 
 :root {
@@ -351,6 +369,7 @@ img.flaticon {
 .icon-javascript {
   border: solid black 3px;
 }
+
 @media (max-width: 720px) {
   h1 {
     font-size: 3rem;

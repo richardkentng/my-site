@@ -78,6 +78,18 @@ h1 {
   background-color: black;
 }
 
+/* PROJECTS */
+.projects-section .projects .project * {
+  width: 200px;
+}
+.projects-section .projects .project .project-link {
+  border: solid 1px #666;
+  text-decoration: none;
+}
+.projects-section .projects .project .project-link:hover {
+  border: solid 1px gold;
+}
+
 /* PANERA CONTAINER */
 :root {
   --descripBgColor: rgb(236, 232, 210);
