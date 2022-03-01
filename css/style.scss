@@ -44,6 +44,17 @@ body {
     }
   }
 }
+
+.header-links {
+  background-color: #222;
+  padding: 1rem;
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.8rem;
+  }
+}
+
 .spacer {
   height: 10px;
 }
