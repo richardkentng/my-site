@@ -84,14 +84,24 @@ h1 {
     .project {
       * {
         width: 200px;
+        border: solid 1px #555;
       }
       .project-link {
-        border: solid 1px #666;
         text-decoration: none;
         &:hover {
           border: solid 1px gold;
         }
       }
+      $project-border-radius: 0.3rem;
+      *:first-child {
+        border-top-left-radius: $project-border-radius;
+        border-top-right-radius: $project-border-radius;
+      }
+      *:last-child {
+        border-bottom-left-radius: $project-border-radius;
+        border-bottom-right-radius: $project-border-radius;
+      }
+      border-radius: $project-border-radius;
     }
   }
 }

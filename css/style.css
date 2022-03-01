@@ -79,15 +79,26 @@ h1 {
 }
 
 /* PROJECTS */
+.projects-section .projects .project {
+  border-radius: 0.3rem;
+}
 .projects-section .projects .project * {
   width: 200px;
+  border: solid 1px #555;
 }
 .projects-section .projects .project .project-link {
-  border: solid 1px #666;
   text-decoration: none;
 }
 .projects-section .projects .project .project-link:hover {
   border: solid 1px gold;
+}
+.projects-section .projects .project *:first-child {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+.projects-section .projects .project *:last-child {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 /* PANERA CONTAINER */
