@@ -3,17 +3,6 @@
   margin: 0;
 }
 
-.css {
-  width: 25px;
-  height: 25px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: black;
-  border: solid black 2px;
-  z-index: -1;
-}
-
 body {
   text-align: center;
   width: 100%;
@@ -21,11 +10,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.poster {
+header {
   background-image: url("../images/nature-mountains.jpg");
   background-size: cover;
   background-position: bottom;
-  height: 500px;
 }
 
 .img-richard {
@@ -34,14 +22,6 @@ body {
   border-radius: 50%;
   z-index: 1;
   border: solid black 3px;
-  margin: 3rem 0 2rem 0;
-}
-.img-richard:hover {
-  width: 205px;
-  transform: translateY(-2.5px);
-}
-.img-richard:hover ~ .spacer {
-  height: 5px;
 }
 
 .header-links {
@@ -52,6 +32,9 @@ body {
   color: #fff;
   text-decoration: none;
   margin: 0 0.8rem;
+}
+.header-links a:hover {
+  filter: brightness(0.8);
 }
 
 .spacer {
@@ -66,11 +49,7 @@ h1 {
 }
 
 .message-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 1rem;
-  border: solid black 5px;
-  width: 90%;
-  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
 }
 .message-box .occupation {
@@ -101,6 +80,9 @@ h1 {
 }
 .projects-section .projects .project .project-link:hover {
   border: solid 1px gold;
+}
+.projects-section .projects .project img {
+  height: 200px;
 }
 .projects-section .projects .project *:first-child {
   border-top-left-radius: 0.3rem;
@@ -373,10 +355,19 @@ img.flaticon {
   font-size: 0.9rem;
 }
 
+.font-share-tech-mono {
+  font-family: "Share Tech Mono", monospace;
+}
+
 .icon-javascript {
   border: solid black 3px;
 }
 
+@media (min-width: 992px) {
+  .message-box {
+    background: linear-gradient(0.25turn, transparent, rgba(255, 255, 255, 0.8), transparent);
+  }
+}
 @media (max-width: 720px) {
   h1 {
     font-size: 3rem;
