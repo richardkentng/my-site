@@ -12,14 +12,20 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Baloo+Bhaijaan+2:wght@500&family=Fuzzy+Bubbles&family=Space+Mono&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Pacifico"
+      rel="stylesheet"
+    />
+    <!-- Statis Files -->
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/functions.js" defer></script>
     <script src="js/script.js" defer></script>
   </head>
@@ -77,70 +83,86 @@
       </div>
     </header>
 
-    <section class="projects-section d-flex flex-column my-5">
-      <div class="h2 text-light font-monospace mb-5">Projects</div>
-      <div
-        class="projects container d-inline-flex flex-column flex-sm-row flex-wrap justify-content-center align-items-center"
-      >
-        <div class="project d-flex flex-column m-3">
-          <img src="./images/text-translator.png" alt="translater app" />
-          <a
-            href="https://translate-api.netlify.app/"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Live Version</a
-          >
-          <a
-            href="https://github.com/richardkentng/translate-api"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Code</a
-          >
+    <section class="projects-section">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="projects">
+        <div class="project">
+          <div class="img-links-cont">
+            <img src="./images/text-translator.png" alt="text translator app" />
+            <div class="links">
+              <a href="https://translate-api.netlify.app" target="_blank"
+                >Live Site</a
+              >
+              <a
+                href="https://github.com/richardkentng/translate-api"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="descrip-cont">
+            <h3 class="title">Text Translator</h3>
+            <ul class="tech-ul">
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>SASS</li>
+              <li>API</li>
+              <li>Local Storage</li>
+            </ul>
+            <p>Users can translate text between two languages.</p>
+            <div class="features">
+              <h4>Features:</h4>
+              <ul>
+                <li>Remembers translation history (Local storage)</li>
+                <li>Displays loading wheel during translation</li>
+                <li>Keyboard shortcut for translate button</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="project d-flex flex-column m-3">
-          <img src="./images/to-unicode.png" alt="plain text to unicode app" />
-          <a
-            href="https://tounicode.netlify.app/"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Live Version</a
-          >
-          <a
-            href="https://github.com/richardkentng/plainText-to-unicodeText"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Code</a
-          >
-        </div>
-        <div class="project d-flex flex-column m-3">
-          <img src="./images/guesscards.png" alt="flashcards app" />
-          <a
-            href="https://guesscards.herokuapp.com/"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Live Version</a
-          >
-          <a
-            href="https://github.com/richardkentng/guesscards-client"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Code</a
-          >
-        </div>
-        <div class="project d-flex flex-column m-3">
-          <img src="./images/snippets.png" alt="snippets" />
-          <a
-            href="https://snippet-master.herokuapp.com/"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Live Version</a
-          >
-          <a
-            href="https://github.com/richardkentng/snippets"
-            target="_blank"
-            class="project-link text-light bg-dark p-2"
-            >View Code</a
-          >
+        <div class="project">
+          <div class="img-links-cont">
+            <img
+              src="./images/to-unicode.png"
+              alt="plain text to unicode app"
+            />
+            <div class="links">
+              <a href="https://tounicode.netlify.app" target="_blank"
+                >Live Site</a
+              >
+              <a
+                href="https://github.com/richardkentng/plainText-to-unicodeText"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="descrip-cont">
+            <h3 class="title">Plain Text to Unicode</h3>
+            <ul class="tech-ul">
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>SASS</li>
+              <li>Local Storage</li>
+            </ul>
+            <p>
+              Converts plain text to unicode with the click of a button.
+              Applicable to apps like Google Keep or iMessage, which do not have
+              text-styling options.
+            </p>
+            <div class="features">
+              <h4>Features:</h4>
+              <ul>
+                <li>Can auto-replace clipboard. (Check-able option)</li>
+                <li>Shows error pop-ups. (Bootstrap toasts)</li>
+                <li>Remembers last clicked style (Local storage)</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
