@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Richard Ng</title>
     <!-- Bootstrap CSS -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="shortcut icon" type="image/png" href="favicon.ico" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Baloo+Bhaijaan+2:wght@500&family=Fuzzy+Bubbles&family=Space+Mono&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans|Pacifico"
       rel="stylesheet"
@@ -31,60 +27,35 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1U-5X0nB_LnXlrTca43Go36XsjX_GTsIU/edit?usp=sharing&ouid=106910080785665642068&rtpof=true&sd=true"
+            target="_blank"
+            class="resume-link"
+            >Resume
+            <img
+              src="./images/open-external-link.png"
+              alt="new window"
+              class="new-window-icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="spacer"></div>
     <header>
-      <img
-        src="https://user-images.githubusercontent.com/77288642/154821028-790b48ac-d957-4e67-b067-46f8f69c0c5b.png"
-        class="img-richard my-3"
-        alt="richard"
-      />
-      <div class="header-links">
-        <a href="https://www.linkedin.com/in/richard-kent-ng/" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/richardkentng" target="_blank">Github</a>
-        <a
-          href="https://docs.google.com/document/d/1U-5X0nB_LnXlrTca43Go36XsjX_GTsIU/edit?usp=sharing&ouid=106910080785665642068&rtpof=true&sd=true"
-          target="_blank"
-          >Resume</a
-        >
-      </div>
-      <div class="message-box">
-        <h1 class="font-share-tech-mono">Richard Ng</h1>
-        <div class="occupation">
-          <div>
-            <span>F</span>
-            <span>u</span>
-            <span>l</span>
-            <span>l</span>
-            <span>-</span>
-            <span>S</span>
-            <span>t</span>
-            <span>a</span>
-            <span>c</span>
-            <span>k</span>
-          </div>
-          <div>
-            <span class="space">&nbsp;</span>
-            <span>W</span>
-            <span>e</span>
-            <span>b</span>
-            <span>&nbsp;</span>
-            <span>D</span>
-            <span>e</span>
-            <span>v</span>
-            <span>e</span>
-            <span>l</span>
-            <span>o</span>
-            <span>p</span>
-            <span>e</span>
-            <span>r</span>
-          </div>
-        </div>
+      <div class="name-title-cont">
+        <h1 class="name">Richard Ng</h1>
+        <p class="title">Full-Stack Web Developer</p>
       </div>
     </header>
-
     <section class="projects-section">
-      <h2 class="section-title">PROJECTS</h2>
+      <h2 class="heading-band" id="projects">Projects</h2>
       <div class="projects">
         <div class="project">
           <div class="img-links-cont">
@@ -167,35 +138,91 @@
       </div>
     </section>
 
-    <footer>
-      <table class="links">
-        <tr>
-          <td class="github-icon-cont">
-            <a href="https://github.com/richardkentng" target="_blank">
-              <img class="github-icon" src="./images/github.svg" alt="github" />
-            </a>
-          </td>
-          <td class="linkedin">
-            <a
-              href="https://www.linkedin.com/in/richard-kent-ng/"
-              target="_blank"
-              ><img
-                src="images/linkedin-icon.svg"
-                class="linkedin"
-                alt="linkedin"
-            /></a>
-          </td>
+    <section class="about">
+      <h2 class="heading-band" id="about">About Me</h2>
+      <div class="content">
+        <img
+          src="https://user-images.githubusercontent.com/77288642/154821028-790b48ac-d957-4e67-b067-46f8f69c0c5b.png"
+          class="img-richard my-3"
+          alt="richard"
+        />
 
-          <td class="email">
-            <button class="btn-email-me">
-              <a href="mailto:richardkentng@gmail.com" target="_blank"
-                >Get In Touch!</a
+        <ul class="about-me-list">
+          <li>
+            <img
+              src="./images/ga-logo.png"
+              alt="general assembly"
+              class="ga-icon"
+            />
+            &nbsp; I graduatated from General Assembly's software engineering
+            program.
+          </li>
+          <li>
+            <img
+              src="./images/coffee.svg"
+              alt="coffee cup"
+              class="coffee-icon"
+            />
+            &nbsp; I've been working part time as an order taker at Panera
+            Bread.
+          </li>
+          <li>
+            📈 &nbsp; Since then I've been leveling up my technical skills.
+          </li>
+          <li>🤝 &nbsp; I'm open to collaboration & work opportunities!</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="heading-band" id="contact">Contact Me</h2>
+      <div class="circle outer-circle">
+        <div class="circle mid-circle">
+          <div class="circle inner-circle">
+            <div class="contact-links">
+              <!-- github link -->
+              <a
+                href="https://github.com/richardkentng"
+                target="_blank"
+                class="contact-link"
               >
-            </button>
-          </td>
-        </tr>
-      </table>
-      <p class="copyright-statement">Copyright &copy; 2022.</p>
-    </footer>
+                <img
+                  src="./images/github.png"
+                  alt="github"
+                  class="icon github-icon"
+                />
+                Github
+              </a>
+              <!-- linkedin link -->
+              <a
+                href="https://www.linkedin.com/in/richard-kent-ng/"
+                target="_blank"
+                class="contact-link"
+              >
+                <img
+                  src="./images/linkedin-square.png"
+                  alt="linkedin"
+                  class="icon linkedin-icon"
+                />
+                LinkedIn
+              </a>
+              <!-- email link -->
+              <a
+                href="mailto:richardkentng@gmail.com"
+                target="_blank"
+                class="contact-link email-link"
+              >
+                <img
+                  src="./images/mail.png"
+                  alt="mail"
+                  class="icon email-icon"
+                />
+                richardkentng<span class="at-email-com">@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
