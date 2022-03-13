@@ -53,10 +53,6 @@ nav ul li a img.new-window-icon {
   width: 15px;
   filter: invert(1);
   margin-left: 0.4em;
-  visibility: hidden;
-}
-nav ul li a.resume-link:hover > .new-window-icon {
-  visibility: visible;
 }
 
 header {

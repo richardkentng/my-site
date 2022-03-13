@@ -54,10 +54,6 @@ nav {
           width: 15px;
           filter: invert(1);
           margin-left: 0.4em;
-          visibility: hidden;
-        }
-        &.resume-link:hover > .new-window-icon {
-          visibility: visible;
         }
       }
     }
