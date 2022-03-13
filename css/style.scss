@@ -22,40 +22,109 @@ body {
   height: 50px;
 }
 
+// FOR DEVELOPMENT:
+// nav {
+//   border: solid purple 2px;
+//   .content {
+//     border: solid blue 2px;
+//     ul {
+//       border: solid red 2px;
+//       li {
+//         border: solid orange 2px;
+//         a {
+//           border: solid gold 2px;
+//         }
+//       }
+//     }
+//   }
+// }
+
 nav {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
+
   width: 100%;
+  height: 50px;
+
   background-color: black;
-  z-index: 10;
   border-bottom: solid $green 1px;
-  ul {
+  .content {
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-between;
+
+    height: 100%;
     margin: 0 10%;
-    height: 50px;
-    li {
+    .rn-icon {
       height: 100%;
-      a {
-        background-color: #111;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: white;
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+
+    ul {
+      display: flex;
+      height: 100%;
+      list-style: none;
+      li {
         height: 100%;
-        padding: 1em;
-        &:hover {
-          background-color: #333;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          height: 100%;
+          padding: 1em;
+
+          color: #eee;
+          background-color: black;
+          text-decoration: none;
+          &:hover {
+            background-color: #333;
+          }
         }
-        img.new-window-icon {
+        a > .new-window-icon {
           width: 15px;
-          filter: invert(1);
           margin-left: 0.4em;
+          filter: invert(1);
         }
       }
+    }
+  }
+  .list-icon {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+// make navbar responsive:
+
+@media (max-width: 584px) {
+  nav {
+    .content {
+      display: none;
+      margin: 0;
+      .rn-icon {
+        display: none;
+      }
+      ul {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+    .list-icon {
+      display: inline;
+    }
+  }
+  nav.display {
+    height: auto;
+    .content {
+      display: flex;
     }
   }
 }
@@ -201,7 +270,6 @@ header {
       width: 200px;
       position: relative;
       border-radius: 50%;
-      z-index: 1;
       border: solid black 3px;
       border: solid $green 2px;
       margin-bottom: 2em;
