@@ -26,7 +26,6 @@ Javscript, HTML, CSS, SASS
   - make eyes follow mouse
 - add animation to something
 - ~~add about me section~~
-  - update based on scroll location
 - ~~add navigation bar~~
 - ~~improve contact me section~~
 
