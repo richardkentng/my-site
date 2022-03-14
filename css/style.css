@@ -189,23 +189,35 @@ header .name-title-cont .title {
 .projects-section .projects .project .descrip-cont .title {
   margin-bottom: 1em;
 }
-.projects-section .projects .project .descrip-cont .tech-ul {
+.projects-section .projects .project .descrip-cont .technologies {
   color: #3eb33e;
   padding: 0;
   list-style: none;
+  margin-bottom: 1em;
 }
-.projects-section .projects .project .descrip-cont .tech-ul li {
+.projects-section .projects .project .descrip-cont .technologies li {
   display: inline;
 }
-.projects-section .projects .project .descrip-cont .tech-ul li::after {
+.projects-section .projects .project .descrip-cont .technologies li::after {
   content: " | ";
 }
-.projects-section .projects .project .descrip-cont .tech-ul li:last-child:after {
+.projects-section .projects .project .descrip-cont .technologies li:last-child:after {
   content: "";
 }
+.projects-section .projects .project .descrip-cont .e-pitch {
+  margin-bottom: 1em;
+}
+.projects-section .projects .project .descrip-cont .heading-features,
 .projects-section .projects .project .descrip-cont .features {
-  margin-top: 2em;
   color: #888;
+}
+.projects-section .projects .project .descrip-cont .heading-features {
+  font-size: 1.1em;
+  margin-bottom: 0.25em;
+}
+.projects-section .projects .project .descrip-cont .features {
+  font-size: 0.9em;
+  padding-left: 1em;
 }
 
 @media (min-width: 768px) {

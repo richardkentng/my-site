@@ -222,10 +222,11 @@ header {
         text-align: left;
         padding: 2em;
         border: solid #555 1px;
-        .tech-ul {
+        .technologies {
           color: $green;
           padding: 0;
           list-style: none;
+          margin-bottom: 1em;
           li {
             display: inline;
             &::after {
@@ -238,9 +239,20 @@ header {
             }
           }
         }
+        .e-pitch {
+          margin-bottom: 1em;
+        }
+        .heading-features,
         .features {
-          margin-top: 2em;
           color: #888;
+        }
+        .heading-features {
+          font-size: 1.1em;
+          margin-bottom: 0.25em;
+        }
+        .features {
+          font-size: 0.9em;
+          padding-left: 1em;
         }
       }
     }
