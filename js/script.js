@@ -1,9 +1,21 @@
 console.log("sanity check");
 
-//on mobile devices, when the list icon is clicked, toggle display of navbar:
-const nav = document.body.querySelector("nav");
-nav.addEventListener("click", toggleDisplayNav);
+// when list icon is clicked, toggle display class of nav (Observable on narrow window widths)
+const listIcon = document.body.querySelector(".list-icon");
+listIcon.addEventListener("click", () => {
+  affectDisplayNav("toggle");
+});
 
-function toggleDisplayNav() {
-  nav.classList.toggle("display");
+// when nav link is clicked, remove display class from nav (Observable on narrow window widths)
+const navLinks = document.body.querySelectorAll(".nav-links a");
+navLinks.forEach((navLink) =>
+  navLink.addEventListener("click", () => {
+    affectDisplayNav("remove");
+  })
+);
+
+// functions
+function affectDisplayNav(classListMethod) {
+  const nav = document.body.querySelector("nav");
+  nav.classList[classListMethod]("display");
 }
