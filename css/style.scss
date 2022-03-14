@@ -43,7 +43,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 
   width: 100%;
   height: 50px;
@@ -121,6 +121,7 @@ nav {
       }
     }
     .hamburger {
+      z-index: 4;
       display: inline;
       &:hover {
         filter: brightness(2);
@@ -132,6 +133,14 @@ nav {
     .content {
       display: flex;
     }
+  }
+  .white-overlay {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 
