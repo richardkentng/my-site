@@ -16,10 +16,50 @@ This is the repo for my website!
 
 # Evolution
 
-## Old Projects Design
+## Old Contacts
 
-![old projects design](./github-images/evolution/projects-1.png)
+![old contacts](./github-images/evolution/contacts-1.png)
 
-## New Projects Design
+## New Contacts
 
-![new projects design](./github-images/evolution/projects-2.png)
+![new contacts](./github-images/evolution/contacts-2.png)
+
+## Old Projects
+
+![old projects](./github-images/evolution/projects-1.png)
+
+## New Projects
+
+![new projects](./github-images/evolution/projects-2.png)
+
+## Old Header
+
+![old header](./github-images/evolution/header-1.png)
+
+## New Header
+
+![new header](./github-images/evolution/header-2.png)
+
+## Old About
+
+![old about](./github-images/evolution/about-1.png)
+
+## New About
+
+![new about](./github-images/evolution/about-2.png)
+
+## Old Navbar
+
+![old navbar](./github-images/evolution/navbar-1.png)
+
+## New Navbar
+
+![new navbar](./github-images/evolution/navbar-2.png)
+
+## Before White Overlay
+
+![before white overlay](./github-images/evolution/before-white-overlay.png)
+
+## After White Overlay
+
+![after white overlay](./github-images/evolution/after-white-overlay.png)
