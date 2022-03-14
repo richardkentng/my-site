@@ -92,7 +92,7 @@ nav {
       }
     }
   }
-  .list-icon {
+  .hamburger {
     display: none;
     position: absolute;
     top: 3px;
@@ -115,9 +115,12 @@ nav {
       ul {
         flex-direction: column;
         width: 100%;
+        .resume-link {
+          border-top: solid #444 1px;
+        }
       }
     }
-    .list-icon {
+    .hamburger {
       display: inline;
       &:hover {
         filter: brightness(2);

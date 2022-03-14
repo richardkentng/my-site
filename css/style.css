@@ -65,7 +65,7 @@ nav .content ul li a > .new-window-icon {
   margin-left: 0.4em;
   filter: invert(1);
 }
-nav .list-icon {
+nav .hamburger {
   display: none;
   position: absolute;
   top: 3px;
@@ -86,10 +86,13 @@ nav .list-icon {
     flex-direction: column;
     width: 100%;
   }
-  nav .list-icon {
+  nav .content ul .resume-link {
+    border-top: solid #444 1px;
+  }
+  nav .hamburger {
     display: inline;
   }
-  nav .list-icon:hover {
+  nav .hamburger:hover {
     filter: brightness(2);
   }
 
