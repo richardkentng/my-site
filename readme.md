@@ -12,11 +12,13 @@ Javscript, HTML, CSS, SASS
 
 - add skills section
 - add more projects
+- navbar:
+  - add navbar location-indicator that updates based on scroll location
+  - normalize spacing of nav links on larger widths
 - header:
   - modernize
   - add paralax effect to image background
 - make css use min-width media queries instead of max-width
-- normalize spacing of nav links on larger widths
 - add email form
 - when email is clicked, show 'copy to clipboard' and 'open in mail app' options
 - javscript fun:
