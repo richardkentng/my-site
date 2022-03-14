@@ -31,10 +31,11 @@ nav .content {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 nav .content .rn-icon {
   height: 100%;
+  margin-right: 1em;
 }
 nav .content .rn-icon:hover {
   filter: brightness(1.2);
@@ -120,16 +121,21 @@ header {
   align-items: center;
   background-image: url("../images/nature-mountains.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   height: 300px;
   color: white;
 }
 header .name-title-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
   width: 100%;
   background-color: black;
-  background: linear-gradient(0.25turn, transparent, black, transparent);
   font-family: "Share Tech Mono", monospace;
   padding: 1em;
+  border-bottom: solid #3eb33e 1px;
 }
 header .name-title-cont .name {
   font-size: 3em;
@@ -140,6 +146,8 @@ header .name-title-cont .title {
   font-size: 1.2rem;
   color: #3eb33e;
   margin-bottom: 1rem;
+  background: black;
+  padding: 0.1em 0.5em 0.2em 0.5em;
 }
 
 /* PROJECTS */
