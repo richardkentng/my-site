@@ -119,6 +119,9 @@ nav {
     }
     .list-icon {
       display: inline;
+      &:hover {
+        filter: brightness(2);
+      }
     }
   }
   nav.display {

@@ -89,6 +89,9 @@ nav .list-icon {
   nav .list-icon {
     display: inline;
   }
+  nav .list-icon:hover {
+    filter: brightness(2);
+  }
 
   nav.display {
     height: auto;
