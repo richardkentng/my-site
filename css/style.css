@@ -138,7 +138,7 @@ header .name-title-cont {
   border-bottom: solid #3eb33e 1px;
 }
 header .name-title-cont .name {
-  font-size: 3em;
+  font-size: 3.3rem;
   margin: 1rem 0 0.2rem 0;
 }
 header .name-title-cont .title {
@@ -169,24 +169,69 @@ header .name-title-cont .title {
   border-bottom: solid #3eb33e 1px;
   margin-bottom: 4rem;
 }
-.projects-section .projects .project .img-links-cont {
+.projects-section .projects .project > .descrip-cont {
+  color: #bbb !important;
+  background-color: #222;
+  text-align: left;
+  padding: 2em;
+  border: solid #555 1px;
+}
+.projects-section .projects .project > .descrip-cont .heading-project {
+  font-size: 1.9em;
+  margin-bottom: 0.5em;
+}
+.projects-section .projects .project > .descrip-cont .technologies {
+  color: #3eb33e;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 1em;
+}
+.projects-section .projects .project > .descrip-cont .technologies li {
+  display: inline;
+}
+.projects-section .projects .project > .descrip-cont .technologies li::after {
+  content: " | ";
+}
+.projects-section .projects .project > .descrip-cont .technologies li:last-child:after {
+  content: "";
+}
+.projects-section .projects .project > .descrip-cont h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.1em;
+}
+.projects-section .projects .project > .descrip-cont p {
+  margin-bottom: 1em;
+}
+.projects-section .projects .project > .descrip-cont .heading-features,
+.projects-section .projects .project > .descrip-cont .features {
+  color: #888;
+}
+.projects-section .projects .project > .descrip-cont .heading-features {
+  font-size: 1.1em;
+  margin-bottom: 0.25em;
+}
+.projects-section .projects .project > .descrip-cont .features {
+  font-size: 0.9em;
+  padding-left: 1em;
+}
+.projects-section .projects .project > .img-links-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #222;
 }
-.projects-section .projects .project .img-links-cont img {
+.projects-section .projects .project > .img-links-cont img {
   max-width: 100%;
   margin: 0.4em;
   border: solid #555 3px;
   filter: brightness(0.8);
 }
-.projects-section .projects .project .img-links-cont .links {
+.projects-section .projects .project > .img-links-cont .links {
   display: flex;
   z-index: 1;
   box-shadow: 0 10px 30px rgba(119, 224, 74, 0.214);
 }
-.projects-section .projects .project .img-links-cont .links a {
+.projects-section .projects .project > .img-links-cont .links a {
   flex: 1;
   color: white;
   background-color: #222;
@@ -194,48 +239,23 @@ header .name-title-cont .title {
   padding: 0.6em 0;
   border: solid #555 1px;
 }
-.projects-section .projects .project .img-links-cont .links a:hover {
+.projects-section .projects .project > .img-links-cont .links a:hover {
   filter: brightness(1.5);
 }
-.projects-section .projects .project .descrip-cont {
-  color: #bbb !important;
-  background-color: #222;
-  text-align: left;
-  padding: 2em;
-  border: solid #555 1px;
+
+.projects-section .to-unicode-project .descrip-cont .heading-other-sites {
+  font-size: 1.1rem;
+  color: #d48d8d;
 }
-.projects-section .projects .project .descrip-cont .title {
+.projects-section .to-unicode-project .descrip-cont .other-site-steps {
+  color: #d48d8d;
+  padding-left: 1.5em;
   margin-bottom: 1em;
 }
-.projects-section .projects .project .descrip-cont .technologies {
-  color: #3eb33e;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 1em;
-}
-.projects-section .projects .project .descrip-cont .technologies li {
-  display: inline;
-}
-.projects-section .projects .project .descrip-cont .technologies li::after {
-  content: " | ";
-}
-.projects-section .projects .project .descrip-cont .technologies li:last-child:after {
-  content: "";
-}
-.projects-section .projects .project .descrip-cont .e-pitch {
-  margin-bottom: 1em;
-}
-.projects-section .projects .project .descrip-cont .heading-features,
-.projects-section .projects .project .descrip-cont .features {
-  color: #888;
-}
-.projects-section .projects .project .descrip-cont .heading-features {
-  font-size: 1.1em;
-  margin-bottom: 0.25em;
-}
-.projects-section .projects .project .descrip-cont .features {
-  font-size: 0.9em;
-  padding-left: 1em;
+.projects-section .to-unicode-project .descrip-cont .other-site-steps .action {
+  display: block;
+  color: #ac6262;
+  font-style: italic;
 }
 
 @media (min-width: 768px) {
@@ -416,6 +436,7 @@ footer {
 }
 
 .heading-band {
+  font-size: 2.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,6 +444,18 @@ footer {
   height: 150px;
   color: #eee;
   background-color: #222;
+}
+
+.font-bold {
+  font-family: "Work Sans", sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-gray-2 {
+  color: #777;
 }
 
 /*# sourceMappingURL=style.css.map */
