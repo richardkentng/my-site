@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans|Pacifico"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Static Files -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/functions.js" defer></script>
@@ -69,43 +73,67 @@
     <section class="projects-section">
       <h2 class="heading-band" id="projects">Projects</h2>
       <div class="projects">
-        <article class="project">
+        <article class="project snippets-project">
           <div class="img-links-cont">
-            <img src="./images/text-translator.png" alt="text translator app" />
+            <img src="./images/snippets-2.png" alt="snippets app" />
             <div class="links">
-              <a href="https://translate-api.netlify.app" target="_blank"
+              <a href="https://snippet-master.herokuapp.com/" target="_blank"
                 >Live Site</a
               >
               <a
-                href="https://github.com/richardkentng/translate-api"
+                href="https://github.com/richardkentng/snippets"
                 target="_blank"
                 >Github</a
               >
             </div>
           </div>
+
           <div class="descrip-cont">
-            <h3 class="title">Text Translator</h3>
+            <h3 class="heading-project">Snippets</h3>
             <ul class="technologies">
-              <li>Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li>PostgreSQL</li>
+              <li>Express.js</li>
+              <li>NodeJS</li>
               <li>Bootstrap</li>
-              <li>SASS</li>
-              <li>API</li>
-              <li>Local Storage</li>
+              <li>Heroku</li>
+              <li>CSS Flexbox & Grid</li>
             </ul>
-            <p class="e-pitch">
-              Users can translate text between two languages of their choosing.
+            <h4>Problem</h4>
+            <p>
+              The exact syntax of code can be difficult for developers to
+              remember. It is more important for developers to focus on the
+              features code can create, rather than obsessing over the nuances
+              of the code itself. Can any developers out there relate to the
+              questions below?
+            </p>
+            <p class="italic text-gray-2">
+              What's that line of code that lets me display a favicon?...
+            </p>
+            <p class="italic text-gray-2">
+              What command will undo a commit on Git?...
+            </p>
+            <h4>Solution</h4>
+            <p>
+              Introducing Snippets, a web app where users can sign in, create
+              “snippets” of data defined with tags, and search through them!
             </p>
             <h4 class="heading-features">Features:</h4>
             <ul class="features">
-              <li>Remembers translation history (Local storage)</li>
-              <li>Displays loading wheel during translation</li>
-              <li>Keyboard shortcut for translate button</li>
+              <li>Authentication</li>
+              <li>Full CRUD: Create, read, update, and delete snippets.</li>
+              <li>Tab-autocompletion: Press tab to confirm tag suggestion.</li>
+              <li>
+                Shift-tag-selection: Press shift to loop through matching tags.
+              </li>
+              <li>
+                Image support: During snippet creation, the text field supports
+                image links.
+              </li>
             </ul>
           </div>
         </article>
-        <article class="project">
+
+        <article class="project to-unicode-project">
           <div class="img-links-cont">
             <img
               src="./images/to-unicode.png"
@@ -123,7 +151,7 @@
             </div>
           </div>
           <div class="descrip-cont">
-            <h3 class="title">Plain Text to Unicode</h3>
+            <h3 class="heading-project">Plain Text to Unicode</h3>
             <ul class="technologies">
               <li>Javascript</li>
               <li>HTML</li>
@@ -132,16 +160,91 @@
               <li>SASS</li>
               <li>Local Storage</li>
             </ul>
-            <p class="e-pitch">
-              Converts plain text to unicode with the click of a button.
-              Applicable to apps like Google Keep or iMessage, which do not have
-              text-styling options.
+            <h4>Context</h4>
+            <p>
+              Some apps like Google Keep or iMessage do not support text
+              styling. As a result, some people like to use unicode to 'style'
+              their text in those apps. Their process is to copy a word from,
+              say, Google Keep, paste that into a text-converter website, and
+              copy the unicoded result.
+            </p>
+            <h4>Problem</h4>
+            <p>
+              When using normal plain-text-to-unicode converters, it takes too
+              many clicks to replace the clipboard's text contents with unicode!
+              Just take a look below at the steps they would have to take, and
+              imagine duplicating those steps for every word they want to style!
+            </p>
+            <h5 class="heading-other-sites">
+              Steps for Other Text-Convertor Websites
+            </h5>
+            <ol class="other-site-steps">
+              <li>
+                A user must select the style they want
+                <span class="action">Click</span>
+              </li>
+              <li>
+                A user must paste in the plain text
+                <span class="action"
+                  >Click plain-text-field, Right-click > paste</span
+                >
+              </li>
+              <li>
+                A user must copy the unicode text
+                <span class="action"
+                  >Click unicode-field, Ctrl + A, Right-click > copy</span
+                >
+              </li>
+            </ol>
+            <h4>Solution</h4>
+            <p>
+              Introducing Plain-Text-to-Unicode, a website where users can
+              replace their clipboard's contents with just
+              <span class="font-bold">ONE CLICK</span> on a style! (Just be sure
+              to select the checkbox option first!)
             </p>
             <h4 class="heading-features">Features:</h4>
             <ul class="features">
               <li>Can auto-replace clipboard. (Check-able option)</li>
               <li>Shows error pop-ups. (Bootstrap toasts)</li>
               <li>Remembers last clicked style (Local storage)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="img-links-cont">
+            <img src="./images/text-translator.png" alt="text translator app" />
+            <div class="links">
+              <a href="https://translate-api.netlify.app" target="_blank"
+                >Live Site</a
+              >
+              <a
+                href="https://github.com/richardkentng/translate-api"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="descrip-cont">
+            <h3 class="heading-project">Text Translator</h3>
+            <ul class="technologies">
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>SASS</li>
+              <li>API</li>
+              <li>Local Storage</li>
+            </ul>
+            <p>
+              Users can translate text between two languages of their choosing.
+            </p>
+            <h4 class="heading-features">Features:</h4>
+            <ul class="features">
+              <li>Remembers translation history (Local storage)</li>
+              <li>Displays loading wheel during translation</li>
+              <li>Keyboard shortcut for translate button</li>
             </ul>
           </div>
         </article>
