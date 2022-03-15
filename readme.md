@@ -11,7 +11,12 @@ Javscript, HTML, CSS, SASS
 # Next Steps
 
 - add skills section
-- add more projects
+- add back-to-top button
+- projects:
+  - make project links more noticeable
+  - add more projects
+  - add more images per project (carousel)
+  - add date
 - navbar:
   - add navbar location-indicator that updates based on scroll location
   - normalize spacing of nav links on larger widths
