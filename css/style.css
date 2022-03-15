@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -133,7 +132,6 @@ header .name-title-cont {
   height: inherit;
   width: 100%;
   background-color: black;
-  font-family: "Share Tech Mono", monospace;
   padding: 1em;
   border-bottom: solid #3eb33e 1px;
 }
@@ -143,11 +141,26 @@ header .name-title-cont .name {
 }
 header .name-title-cont .title {
   font-family: "Noto Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #3eb33e;
   margin-bottom: 1rem;
   background: black;
   padding: 0.1em 0.5em 0.2em 0.5em;
+}
+
+.skills {
+  margin: 5rem 10%;
+}
+.skills h2 {
+  color: #eee;
+  font-size: 2rem;
+}
+.skills p {
+  color: #3eb33e;
+  font-size: 1.3rem;
+}
+.skills > * {
+  margin-bottom: 1rem;
 }
 
 /* PROJECTS */
